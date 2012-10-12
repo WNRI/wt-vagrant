@@ -1,0 +1,5 @@
+#!/bin/sh
+GIT_WORK_TREE=/srv/www/wt-test git checkout -f
+cd /srv/www/wt-test/django
+django-admin compilemessages
+sudo service apache2 reload
